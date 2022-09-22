@@ -19,6 +19,16 @@ class App extends React.Component{
     });
   };
 
+  decrement = () => {
+    this.setState(prevState => {
+      return {count: prevState.count - 1}
+    });
+  };
+
+  reset = () => {
+    this.setState({count: 0})
+  }
+
    render() {
     return ( 
     <div>
