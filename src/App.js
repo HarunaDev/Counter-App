@@ -12,6 +12,13 @@ class App extends React.Component{
     this.decrement = this.decrement.bind(this);
     this.reset = this.reset.bind(this);
   }
+
+  increment = () => {
+    this.setState(prevState => {
+      return {count: prevState.count + 1};
+    });
+  };
+
    render() {
     return ( 
     <div>
