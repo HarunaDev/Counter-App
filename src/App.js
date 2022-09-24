@@ -2,6 +2,7 @@
 import React from 'react';
 import './App.css';
 import Counter from './components/Counter';
+import ToggleState from './components/ToggleState';
 
 class App extends React.Component{
   constructor(props){
@@ -14,6 +15,7 @@ class App extends React.Component{
     return ( 
     <div>
       <Counter />
+      <ToggleState />
     </div>
     )
   }
