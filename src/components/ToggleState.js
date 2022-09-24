@@ -6,6 +6,16 @@ class ToggleState extends React.Component{
         this.state = {
         visibility: false
     }
+
+    // bind this
+    this.toggleVisibility = this.toggleVisibility.bind(this)
+    }
+
+    // toggle visibility based on tracking current state to update ui
+    toggleVisibility = () => {
+        this.setState(prevState => ({
+            visibility: !prevState.visibility
+        }))
     }
     
     render() {
