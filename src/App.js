@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Counter from './components/Counter';
 import ToggleState from './components/ToggleState';
+import FormControl from './components/FormControl';
 
 class App extends React.Component{
   constructor(props){
@@ -16,6 +17,7 @@ class App extends React.Component{
     <div>
       <Counter />
       <ToggleState />
+      <FormControl />
     </div>
     )
   }
