@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import React from 'react';
 import './App.css';
+import Counter from './components/Counter';
 
 class App extends React.Component{
   constructor(props){
@@ -8,35 +9,11 @@ class App extends React.Component{
     this.state = {
       count: 0
     };
-    this.increment = this.increment.bind(this);
-    this.decrement = this.decrement.bind(this);
-    this.reset = this.reset.bind(this);
   }
-
-  increment = () => {
-    this.setState(prevState => {
-      return {count: prevState.count + 1};
-    });
-  };
-
-  decrement = () => {
-    this.setState(prevState => {
-      return {count: prevState.count - 1}
-    });
-  };
-
-  reset = () => {
-    this.setState({count: 0})
-  }
-
    render() {
     return ( 
     <div>
-      <button className='inc' onClick={this.increment}>Increment</button>
-      <button className='dec' onClick={this.decrement}>Decrement</button>
-      <button className='res' onClick={this.reset}>Reset</button>
-
-      <h1>Current Count: {this.state.count}</h1>
+      <Counter />
     </div>
     )
   }
