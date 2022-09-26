@@ -4,6 +4,7 @@ import './App.css';
 import Counter from './components/Counter';
 import ToggleState from './components/ToggleState';
 import FormControl from './components/FormControl';
+import Guess from './components/Guess';
 
 class App extends React.Component{
   constructor(props){
@@ -18,6 +19,7 @@ class App extends React.Component{
       <Counter />
       <ToggleState />
       <FormControl />
+      <Guess />
     </div>
     )
   }
