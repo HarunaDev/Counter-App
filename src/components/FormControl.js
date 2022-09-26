@@ -25,6 +25,7 @@ class FormControl extends React.Component{
     render() {
         return (
             <div className="section">
+                <h1>Form Submit</h1>
                 <form onSubmit={this.handleSubmit}>
                     <input value={this.state.input} onChange={this.handleChange}/>
                     <button type="submit">Submit</button>
