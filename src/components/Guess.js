@@ -1,6 +1,8 @@
 export default function Guess() {
     function handleClick() {
-
+        let randomNum = Math.floor(Math.random() * 5) + 1
+        let userInput = prompt('type a number');
+        alert(`computer number: ${randomNum}, Your guess: ${userInput}`)
     }
     return (
         <div className="section">
