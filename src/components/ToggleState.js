@@ -22,6 +22,7 @@ class ToggleState extends React.Component{
         if(this.state.visibility) {
             return (
                 <div className="section">
+                    
                     <button onClick={this.toggleVisibility}>Click me</button>
                     <h1>Now you see me</h1>
                 </div>
@@ -29,6 +30,7 @@ class ToggleState extends React.Component{
         } else {
             return (
                 <div className="section">
+                    <h1>Toggle Visibility</h1>
                     <button onClick={this.toggleVisibility}>Click me</button>
                 </div>
             )
